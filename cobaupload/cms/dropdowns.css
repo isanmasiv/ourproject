@@ -1,0 +1,22 @@
+	.dropdown-halaman-content a
+	{
+		display:block;
+		padding:10px;
+		text-decoration:none;
+		color:white;
+		transition:ease-in-out 0.3s;
+		border-left:0px solid #000;
+	}
+
+	.dropdown-halaman-content a:hoverrrrr
+	{
+		background-color:rgba(0,0,0,0.1);
+		transition:ease-in-out 0.3s;
+		border-left:5px solid #000;
+	}
+
+	.dropdown-halaman-content
+	{
+		background-color:rgba(0,0,0,0.1);
+		display:none;
+	}
