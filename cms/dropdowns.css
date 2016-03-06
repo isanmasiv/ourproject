@@ -1,0 +1,170 @@
+/* DROPDOWNS - DO NOT DISTURB THESE FAMILIES*/
+
+/* FUCKING SORT SPAN */
+	#nav-dd
+	{
+		float:right;
+	}
+
+/* ANIMATION */
+@-moz-keyframes statistikAnim
+{
+	from {height: 0px;}
+	to {height: 48px;}
+}
+
+@-moz-keyframes postAnim
+{
+	from {height: 0px;}
+	to {height: 192px;}
+}
+
+@-moz-keyframes commentAnim
+{
+	from {height: 0px;}
+	to {height: 48px;}
+}
+
+@-moz-keyframes settingAnim
+{
+	from {height: 0px;}
+	to {height: 144px;}
+}
+
+
+/* DROPDOWN HALAMAN */
+	.dropdown-statistik-content a
+	{
+		display:block;
+		padding:15px;
+		text-decoration:none;
+		color:white;
+		transition:ease-in-out 0.3s;
+		border-left:0px solid #eee;
+		font-size:14px;
+	}
+
+	.dropdown-statistik-content a:hover
+	{
+		background-color:rgba(255,255,255,0.5);
+		color:#555;
+		transition:ease-in-out 0.3s;
+		border-left:5px solid #eee;
+	}
+
+	.dropdown-statistik-content
+	{
+		display:none;
+		margin-left:23px;
+		border-radius:5px;
+		background-color:rgba(0,0,0,0.1);
+	}
+	
+/* DROPDOWN POST */
+	.dropdown-post-content a
+	{
+		display:block;
+		padding:15px;
+		text-decoration:none;
+		color:white;
+		transition:ease-in-out 0.3s;
+		border-left:0px solid #eee;
+		font-size:14px;
+	}
+
+	.dropdown-post-content a:hover
+	{
+		background-color:rgba(255,255,255,0.5);
+		color:#555;
+		transition:ease-in-out 0.3s;
+		border-left:5px solid #eee;
+	}
+
+	.dropdown-post-content
+	{
+		display:none;
+		margin-left:23px;
+		border-radius:5px;
+		background-color:rgba(0,0,0,0.1);
+	}
+	
+/* DROPDOWN COMMENT */
+	.dropdown-comment-content a
+	{
+		display:block;
+		padding:15px;
+		text-decoration:none;
+		color:white;
+		transition:ease-in-out 0.3s;
+		border-left:0px solid #eee;
+		font-size:14px;
+	}
+
+	.dropdown-comment-content a:hover
+	{
+		background-color:rgba(255,255,255,0.5);
+		color:#555;
+		transition:ease-in-out 0.3s;
+		border-left:5px solid #eee;
+	}
+
+	.dropdown-comment-content
+	{
+		display:none;
+		margin-left:23px;
+		border-radius:5px;
+		background-color:rgba(0,0,0,0.1);
+	}
+	
+/* DROPDOWN SETTING */
+	.dropdown-setting-content a
+	{
+		display:block;
+		padding:15px;
+		text-decoration:none;
+		color:white;
+		transition:ease-in-out 0.3s;
+		border-left:0px solid #eee;
+		font-size:14px;
+	}
+
+	.dropdown-setting-content a:hover
+	{
+		background-color:rgba(255,255,255,0.5);
+		color:#555;
+		transition:ease-in-out 0.3s;
+		border-left:5px solid #eee;
+	}
+
+	.dropdown-setting-content
+	{
+		display:none;
+		margin-left:23px;
+		border-radius:5px;
+		background-color:rgba(0,0,0,0.1);
+	}
+	
+	/* FOR FUCKING GLOBAL USE ONLY */
+	.show-statistik
+	{
+		display:block;
+		animation:statistikAnim 0.5s;
+	}
+	
+	.show-post
+	{
+		display:block;
+		animation:postAnim 0.5s;
+	}
+	
+	.show-comment
+	{
+		display:block;
+		animation:commentAnim 0.5s;
+	}
+
+		.show-setting
+	{
+		display:block;
+		animation:settingAnim 0.5s;
+	}

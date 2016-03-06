@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>Blogger KW - Statistic > Visitor</title>
+		<title>Blogger KW - Setting > Profile Setting</title>
 		<link rel="Stylesheet" href="Style.css">
 		<link rel="Stylesheet" href="dropdowns.css">
 		<link rel="Stylesheet" href="fontawesome/css/font-awesome.css">
@@ -10,6 +10,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<meta name="author" content="Blogger KW Team">
+		<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+		<script type="text/javascript" src="ckeditor/style.js"></script>
 	</head>
 	
 	<body>
@@ -24,57 +26,47 @@
 		<br><br><br><br>
 		<div class="page-blog-container">
 			<div class="blog-status">
-				<h3 class="blog-name-title"><a class="blog-link" href="#">Nama Blog</a> | Pengunjung</h3>
+				<h3 class="blog-name-title"><a class="blog-link" href="#">Nama Blog</a> | Pengaturan</h3>
 			</div>
 			<div class="blog-name">
 				<h3 class="blog-name-title"><a href="#" class="blog-link">My Blog</a></h3>
 			</div>
 		</div>
 		<hr>
-		
 		<div class="page-content">
-		<h3>Visitor</h3><hr>
-		<div class="visitor-right">
-			<h4 title="Pengunjung harian">Daily Visitor Counter</h4>
-				<table class="visitor-right-table">
-					<tr class="visitor-right-table-row">
-						<th class="visitor-right-table-header">Hari ini</th>
-						<td class="visitor-right-table-data">0 Visit</td>
-					</tr>
-					<tr class="visitor-right-table-row">
-						<th class="visitor-right-table-header">kemarin</th>
-						<td class="visitor-right-table-data">0 Visit</td>
-					</tr>
-					<tr class="visitor-right-table-row">
-						<th class="visitor-right-table-header">Bulan ini</th>
-						<td class="visitor-right-table-data">0 Visit</td>
-					</tr>
-					<tr class="visitor-right-table-row">
-						<th class="visitor-right-table-header">Tahun ini</th>
-						<td class="visitor-right-table-data">0 Visit</td>
-					</tr>
-					<tr class="visitor-right-table-row">
-						<th class="visitor-right-table-header">Total keseluruhan</th>
-						<td class="visitor-right-table-data">0 Visit</td>
-					</tr>
-				</table>
-		</div>
-		
-		<div class="visitor-left">
-			<h4 title="Pengunjung berdasarkan postingan">Post Visitor Counter</h4>
-				<table class="visitor-right-table">
-					<tr class="visitor-right-table-row">
-						<th class="visitor-right-table-header">Post Title</th>
-						<td class="visitor-right-table-data">0 Visit</td>
-					</tr>
-				</table>
+		<h3>Pengaturan Profil</h3><hr>
+		<div class="blog-setting-left">
+			<h4>Profil dan Akun</h4>
+			
+			<form action="#" method="post">
+			<label>Nama Pengguna:</label><br>
+			<input type="text" name="namapengguna_profile" required="required" placeholder="Masukkan Judul Blog" />
+			<br><br>
+			<label>Facebook (URL):</label><br>
+			<input type="text" name="facebookrofile_profile" placeholder="Alamat Profil Facebook" />
+			<br><br>
+			<label>Twitter (URL):</label><br>
+			<input type="text" name="twitterprofile_profile" placeholder="Alamat Profil Twitter" />
+			<br><br>
+			<label>Google+ (URL):</label><br>
+			<input type="text" name="googleplusprofile_profile" placeholder="Alamat Profil Google+" />
+			<br><br>
+			<label>Tentang Anda:</label><br>
+			<textarea rows="8" name="aboutadmin_profile" placeholder="Masukkan Deskripsi"></textarea>
+			<br><br>
+			<label>Kata Sandi (Konfirmasi):</label><br>
+			<input type="password" name="password_profile" required="required" placeholder="Konfirmasi Kata Sandi" />
+			<br><br>
+			<button type="submit">Simpan</button>
+			</form>
+			
 		</div>
 		</div>
 		
 		<div class="navigation-left">
-			<a class="nav-new-post-button" href="/ourproject/cms/">Dashboard</a>
+			<a class="nav-new-post-button" href="/ourproject/cms/createpost.php">New Post</a>
 			<div class="navigation-content">
-				<a class="navigation-link" href="/ourproject/cms/"><span class="fa fa-home" id="nav-icon"></span>&nbsp;&nbsp; Dashboard</a>
+				<a class="navigation-link" href="/ourproject/cms/"  style="background-color:rgba(0,0,0,0.1)"><span class="fa fa-home" id="nav-icon"></span>&nbsp;&nbsp; Dashboard</a>
 				
 				<div class="dropdown-post">
 				<a class="navigation-link" href="javascript:void(0)" onclick="postClicked()"><span class="fa fa-file-text-o" id="nav-icon"></span>&nbsp;&nbsp; Post <span class="fa fa-sort-desc" id="nav-dd"></span></a>
@@ -90,9 +82,9 @@
 				<a class="navigation-link" href="/ourproject/cms/users.php"><span class="fa fa-user" id="nav-icon"></span>&nbsp;&nbsp; User</a>
 				
 				<div class="dropdown-statistik">
-				<a class="navigation-link" href="javascript:void(0)" onclick="statistikClicked()" style="background-color:rgba(0,0,0,0.1)"><span class="fa fa-bar-chart" id="nav-icon"></span>&nbsp;&nbsp; Statistik <span class="fa fa-sort-desc" id="nav-dd"></span></a>
+				<a class="navigation-link" href="javascript:void(0)" onclick="statistikClicked()"><span class="fa fa-bar-chart" id="nav-icon"></span>&nbsp;&nbsp; Statistik <span class="fa fa-sort-desc" id="nav-dd"></span></a>
 				<div class="dropdown-statistik-content" id="statistik-content">
-				<a href="javascript:void(0)" style="background-color:rgba(0,0,0,0.1)">Pengunjung <span class="fa fa-dot-circle-o" id="current-page" title="Pantau pengunjung"></span></a>
+				<a href="/ourproject/cms/visitor.php">Pengunjung</a>
 				</div>
 				</div>
 				
@@ -104,10 +96,10 @@
 				</div>
 				
 				<div class="dropdown-setting">
-				<a class="navigation-link" href="javascript:void(0)" onclick="settingClicked()"><span class="fa fa-cogs" id="nav-icon"></span>&nbsp;&nbsp; Setting <span class="fa fa-sort-desc" id="nav-dd"></span></a>
+				<a class="navigation-link" href="javascript:void(0)" onclick="settingClicked()" style="background-color:rgba(0,0,0,0.1)"><span class="fa fa-cogs" id="nav-icon"></span>&nbsp;&nbsp; Setting <span class="fa fa-sort-desc" id="nav-dd"></span></a>
 				<div class="dropdown-setting-content" id="setting-content">
 				<a href="/ourproject/cms/general-settings.php">Setting Dasar</a>
-				<a href="/ourproject/cms/profile-settings.php">Setting Profil</a>
+				<a href="/ourproject/cms/profile-settings.php" style="background-color:rgba(0,0,0,0.1)">Setting Profil <span class="fa fa-dot-circle-o" id="current-page" title="Setting dasar blog"></span></a>
 				<a href="/ourproject/cms/pass-settings.php">Setting Password</a>
 				</div>
 				</div>
